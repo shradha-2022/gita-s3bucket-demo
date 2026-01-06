@@ -22,6 +22,6 @@ jobs:
 
       - name: Code static code to S3
         run: |
-          aws s3 sync ./ s3://gita-s3bucket-demo/ \
+          aws s3 sync ./ s3://gita-static-website-demo/ \
             --exclude "*" \
             --include "index.html"
